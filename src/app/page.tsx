@@ -7,7 +7,7 @@ import { urlForImage } from "../../sanity/lib/image";
 // import ProductCard from "./ProductCard";
 import  Header from "@/app/components/layout/header"
 import Hero from "./components/layout/views/Hero";
-
+// 
 //  const name = "jacket"
 export const getProductsData = async () => {
  const res = await client.fetch(`*[_type=="product"]{
@@ -19,11 +19,11 @@ export const getProductsData = async () => {
     name
   }
  }`,{
-  
+  // 
  })
  return res
 }
-
+// 
 interface IProduct {
   title:string,
   _id: string,
@@ -34,9 +34,9 @@ interface IProduct {
     name:string
   }
 }
-
+// 
 export default async function Home() {
-
+// 
    const data:IProduct[] = await getProductsData()
   //  console.log(data)  
   return (
@@ -44,7 +44,7 @@ export default async function Home() {
     <Header/>
     <Hero/>
    <div className="grid grid-cols-[auto,auto,auto] justify-center gap-x-10">
- 
+//  
      {data.map((item) => (
       <div>   
       {/* <ProductCard item={item}/> */}
@@ -54,59 +54,56 @@ export default async function Home() {
    </>
   )
 }
-   
+  //  
 // grid grid-cols-[auto,auto,auto] justify-center gap-x-10
-
-   
-   
-   
-   
-   
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
-   
-   
-   
-   
-   
-   
-   
-   
-   
+// 
+  //  
+  //  
+// 
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+// 
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+// 
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
+  //  
    
    
    
